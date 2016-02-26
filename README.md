@@ -19,7 +19,7 @@ Let's go through the steps of the algorithm before we explain the implementation
 -The next highest card should be on the top of one of the decks
 
 ###3. Reorganizing the piles
-This is where the magic happens. A human can scan the tabletop rather quickly and deduce which topcard is next to draw. For a computer to do this would require a sequential search of the piles and inspection of their top card. Instead, we will store the piles in a min heap based on their top card. This allows the program to search the piles in O(logn) time. To do this, the pile must be removed from the table after the top card is drawn and reinserted with the new top card as its defining value in the min heap.
+This is where the magic happens. A human can scan the tabletop rather quickly and deduce which topcard is next to draw. For a computer to do this would require a sequential search of the piles and inspection of their top card. Instead, we will store the piles in a min heap based on their top card. This allows the program to search the piles in O(logn) time. To do this, the pile must be removed from the table after the top card is drawn and reinserted with the new top card as its key in the min heap.
 
 Ace of Spades is implemented as a map.
 The tabletop is modeled as a map of vectors. Maps are implemented as heaps in C++, which allows the program to take advantage of the O(1) pop time and the O(logn) push time as described in step 3. Each vector is a "pile" of cards. Each key/value pair in the map has the "pile" as its value and the pile's top card as its key. When a card is removed from the top of the pile, the pile is removed from the map and reinserted with its top card as the key/value pair's new key.
