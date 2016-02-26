@@ -14,7 +14,7 @@ Let's go through the steps of the algorithm before we explain the implementation
 -For each card after, place it on the pile with the smallest top card which is still larger than it. If it is the largest card, make a new pile. You should have 6-12 piles by the end of this process.
 
 ###2. Collecting
--The leftmost pile's top card should be 0 (the ace of spades), pick up this card. 
+-The leftmost pile's top card should be 0 (the ace of spades), pick up this card.         
 -Search for the 2 of spades, 3 of spades, etc. 
 -The next highest card should be on the top of one of the decks
 
