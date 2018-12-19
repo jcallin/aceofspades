@@ -29,6 +29,9 @@ The tabletop is modeled as a map of vectors (a heap of piles). Maps are implemen
 When a card is removed from the top of a pile, the pile is removed from the map and reinserted with its top card as the key/value pair's new key.
 This ensures the 0th index of the tabletop heap (the root of the heap) will always contain the pile that has the next smallest card! Popping the 0th index of the tabletop 52 times will give you the integers 0-52 in ascending order.
 
+### Caveats
+- When dealing in the real world, we are performing a N^2 operation. For N cards, we must compare each card to at most N piles on the table before inserting. A computer can "deal" in n(logn) steps by inserting N cards into the heap in logn steps.
+
 ## Next steps
-The next steps for Ace of Spades involve analyzing its runtime against quicksort, mergeseort, insertion sort, and selection sort.
-We are also working to analyze how a set's randomness correllates to the total number of piles we have on our table after dealing.
+The next steps for Ace of Spades involve analyzing its runtime against quicksort, mergesort, insertion sort, and selection sort.
+We are also working to analyze how a set's randomness correlates to the total number of piles we have on our table after dealing.
