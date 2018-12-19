@@ -2,9 +2,9 @@
 ### A C++ program for testing a practical card sorting algorithm
 #### The idea for this program originates from a blog post at http://www.timl.id.au/?p=23 and much of the information below is paraphased because Tim did such a good job of explaining the algorithm.
 
-Computers can sort a deck of cards in a variety of different ways, most of which are impossible to perform in a sensible way on a tabletop with a real deck of cards. The quick algorithms-- mergesort and quicksort-- involve essentially splitting the deck into individual cards and reassembling them into a sorted deck. Slow algorithms like insertion, bubble, and selection sort make more sense to the average person, but are simply too slow to implement in a computer. 
+## Is there an algorithm which is human friendly and can keep a low fundamental complexity?
 
-Is there an algorithm which is human friendly and can keep a low fundamental complexity?
+Computers can sort a deck of cards in a variety of different ways, most of which are impossible to perform in a sensible way on a tabletop with a real deck of cards. The quick algorithms-- mergesort and quicksort-- involve essentially splitting the deck into individual cards and reassembling them into a sorted deck. Slow algorithms like insertion, bubble, and selection sort make more sense to the average person, but are simply too slow to implement in a computer. 
 
 Let's go through the steps of the algorithm before we explain the implementation.
 
