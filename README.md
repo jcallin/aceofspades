@@ -1,6 +1,6 @@
 # Ace of Spades
 ### A C++ program for testing a practical card sorting algorithm
-#### The idea for this program originates from a blog post at http://www.timl.id.au/?p=23 and much of the information below is paraphased because Tim did such a good job of explaining the algorithm.
+#### The idea for this program originates from a blog post at http://www.timl.id.au/?p=23
 
 ## Is there an algorithm which is human friendly and can keep a low fundamental complexity?
 
